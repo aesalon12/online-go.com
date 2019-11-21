@@ -243,6 +243,8 @@
         flex-wrap: wrap;
         justify-content: space-between;
         position: relative;
+        user-select: none;
+        cursor: help;
 
         .score-details {
             position: absolute;
@@ -257,7 +259,7 @@
             visibility: hidden;
         }
 
-        &:hover .score-details {
+        &.show-score-breakdown .score-details {
             z-index: z.goban.score-details;
             visibility: visible;
             font-size: 1.2rem;
